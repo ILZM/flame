@@ -18,7 +18,7 @@ class SpriteAnimationComponent extends PositionComponent {
 
   /// Creates an [SpriteAnimationComponent] from an [animation] and a [size]
   ///
-  /// Optionally [removeOnFinish] can be set to true to have this component be auto removed from the [BaseGame] when the animation is finished.
+  /// Optionally [removeOnFinish] can be set to true to have this component be auto removed from the BaseGame when the animation is finished.
   SpriteAnimationComponent.fromSpriteAnimation(
     Vector2 size,
     this.animation, {
@@ -29,7 +29,7 @@ class SpriteAnimationComponent extends PositionComponent {
 
   /// Creates a SpriteAnimationComponent from a [size], an [image] and [data]. Check [SpriteAnimationData] for more info on the available options.
   ///
-  /// Optionally [removeOnFinish] can be set to true to have this component be auto removed from the [BaseGame] when the animation is finished.
+  /// Optionally [removeOnFinish] can be set to true to have this component be auto removed from the BaseGame when the animation is finished.
   SpriteAnimationComponent.fromFrameData(
     Vector2 size,
     Image image,
@@ -44,7 +44,6 @@ class SpriteAnimationComponent extends PositionComponent {
   }
 
   /// Component will be removed after loop end and [removeOnFinish] is set.
-  /// [Component.shouldRemove] worked here.
   @override
   bool get shouldRemove =>
       super.shouldRemove ||
