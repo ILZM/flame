@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/painting.dart';
+import 'package:meta/meta.dart';
 
 import '../text_config.dart';
 import 'position_component.dart';
